@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("./assests/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+}
+
+.navbar .logo {
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar .nav-items li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar .nav-items li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    /* padding: 0 10px 0 10px; */
+}
+
+.navbar .nav-items li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #adc4c4;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar .nav-items li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.content .btn button {
+    width: 280px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: larger;
+    border: 2px solid #adc4c4;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.content .btn span {
+    background: #adc4c4;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.content .btn button:hover span {
+    width: 100%;
+}
+
+.content .btn button:hover {
+    border: none;
+    /* color: #202020; */
+}
+
+.story-section {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    color: black;
+    background-image: linear-gradient(rgba(77, 72, 72, 0.5), rgba(74, 70, 70, 0.5)), url('assests/3.jpg');
+    background-position: 100%;
+    background-size: contain;
+}
+
+.section-text h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: solid;
+    text-align: center;
+}
+
+.section-text p {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    /* margin-bottom: 1em; */
+    margin: auto 2.5em;
+    line-height: 1.9em;
+}
+
+.image {
+    position: relative;
+    top: 150px;
+    margin-left: 15px;
+}
+
+.design{
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(rgba(77, 72, 72, 0.5), rgba(74, 70, 70, 0.5)), url('assests/10.webp');
+    background-position: 100%;
+    background-size: contain;
+}
+
+.featured{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 20px auto;
+}
+
+.work{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.work img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    max-height: auto;
+    border-radius: 20px;
+    opacity: .7;
+    object-fit: cover;
+    border: .1rem solid black ;
+}
+
+.work img:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: all ease .3s;
+    opacity: 1;
+}
+
+.work a{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.work .section-text .h2{
+    font-size: 100px;
+    margin-top: 20px;
+    color: rgb(10, 10, 10);
+    text-decoration: solid;
+    text-align: center;
+}
+
+.design .section-text p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+
